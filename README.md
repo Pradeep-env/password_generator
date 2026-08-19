@@ -35,7 +35,7 @@ Designed with a Unix mindset: simple, composable, and safe by default.
 
 - **Language:** Python 3.10+
 - **Crypto:** GPG (public-key encryption)
-- **Clipboard:** Native Linux tools (no Python dependencies)
+- **Clipboard:** Native Linux tools
 - **Platform:** Linux (tested on Ubuntu, Wayland & X11)
 
 ---
@@ -54,8 +54,10 @@ Designed with a Unix mindset: simple, composable, and safe by default.
 
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Pings-Lab/Linux-Utilities/main/password/password.py -o password.py
-python3 password.py
+git clone git@github.com:Pradeep-env/password_generator.git
+uv venv
+uv pip install -r requirements.txt
+uv run python3 password.py
 ```
 
 ### GPG setup and Config in script (Optional but Recommended)

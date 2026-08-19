@@ -55,6 +55,7 @@ Designed with a Unix mindset: simple, composable, and safe by default.
 
 ```bash
 git clone git@github.com:Pradeep-env/password_generator.git
+cd password_generator
 uv venv
 uv pip install -r requirements.txt
 uv run python3 password.py
